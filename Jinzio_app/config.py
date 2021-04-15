@@ -3,8 +3,10 @@ from datetime import date
 
 today = date.today()
 
+
 class TestCaseConfig:
     APPLICATION_URL = "https://app.jinzio.com/auth/login"
+    JOIN_URL = "https://app.jinzio.com/join"
 
     EMAIL_FIELD_ID = "username"
     EMAIL_FIELD_LOCATOR = (By.ID, EMAIL_FIELD_ID)
@@ -21,4 +23,4 @@ class TestCaseConfig:
     INVITATIONS_ID = "rec-invitations"
     INVITATIONS_LOCATOR = (By.ID, INVITATIONS_ID)
 
-    CUR_DATE = today.strftime("%d/%m/%Y")
+    CUR_DATE = today.strftime("%d-%m-%Y")
